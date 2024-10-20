@@ -27,7 +27,7 @@ app.use(cors({ origin: 'http://localhost:3000' }));
 
 // Configure PostgreSQL connection with SSL
 const pool = new Pool({
-  connectionString: process.env.DB_URL,
+  connectionString: process.env.DATABASE_URL,
   user: process.env.DB_USER,
   host: process.env.DB_HOST,
   database: process.env.DB_NAME,
