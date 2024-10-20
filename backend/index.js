@@ -25,6 +25,7 @@ app.use(express.json());
 app.use(cors({ origin: 'http://localhost:3000' }));
 
 
+
 // Configure PostgreSQL connection with SSL
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
@@ -64,7 +65,9 @@ io.on('connection', (socket) => {
   socket.on('disconnect', () => {
     console.log('A user disconnected:', socket.id);
   });
+
 });
+
 
 // Signup Route to handle POST request
 app.post('/signup', async (req, res) => {
