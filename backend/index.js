@@ -8,6 +8,7 @@ const path = require('path'); // For handling file paths
 const http = require('http'); // Import http module
 const { Server } = require('socket.io'); // Import socket.io
 
+
 // Initialize express and http server
 const app = express();
 const port = process.env.PORT || 5000; // Use environment variable for port
@@ -23,8 +24,10 @@ const io = new Server(server, {
 app.use(express.json());
 app.use(cors({ origin: 'http://localhost:3000' }));
 
+
 // Configure PostgreSQL connection with SSL
 const pool = new Pool({
+  connectionString: process.env.DB_URL,
   user: process.env.DB_USER,
   host: process.env.DB_HOST,
   database: process.env.DB_NAME,
