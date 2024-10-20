@@ -1,0 +1,96 @@
+/* Base styling for sales forecasting component */
+.sales-forecasting {
+    padding: 20px;
+    height: calc(100% - 220px);
+    width: calc(100% - 350px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 110px;
+    left: 300px;
+    padding-right: 30px;
+    margin-top: 10px;
+}
+
+/* Header styling */
+.sales-forecasting h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #502d96;
+}
+
+/* Section styling */
+.sales-forecasting .section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+}
+
+.sales-forecasting .section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* List styling inside metrics-section */
+.sales-forecasting .metrics-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sales-forecasting .metrics-list li {
+    margin-bottom: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+.sales-forecasting .metrics-list li:hover {
+    background-color: #e0e0e0;
+}
+
+/* Table styling */
+.sales-forecasting .sales-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.sales-forecasting .sales-table th, 
+.sales-forecasting .sales-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.sales-forecasting .sales-table th {
+    background-color: #f2f2f2;
+    color: #502d96;
+}
+
+/* Summary section list styling */
+.sales-forecasting .summary-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sales-forecasting .summary-list li {
+    margin-bottom: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+.sales-forecasting .summary-list li:hover {
+    background-color: #e0e0e0;
+}

@@ -1,0 +1,71 @@
+/* src/components/Startupdash/StartupSidebar.css */
+
+.startup-sidebar {
+  width: 250px;
+  background-color: #2c2c2c; /* Darker shade for better contrast */
+  color: #452e88; /* Light text color for better visibility */
+  padding: 40px 20px 20px;
+  height: calc(100vh - 0px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: left;
+  overflow-y: auto;
+  box-sizing: border-box;
+  transition: width 0.3s ease;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.startup-sidebar-brand {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #f39c12; /* Bright accent color */
+  text-align: center; /* Center brand text */
+}
+
+.startup-sidebar ul li {
+  margin: 15px 0;
+  padding: 10px 15px; /* Added padding for clickable area */
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.1); /* Light background for visibility */
+  transition: transform 0.2s ease, text-shadow 0.2s ease, background-color 0.3s ease;
+}
+
+.startup-sidebar ul li:hover {
+  transform: translateY(-3px);
+  text-shadow: 0 0 8px #98ff98; /* Mint green color */
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly lighter on hover */
+}
+
+/* Optional: Active state for better visibility */
+.startup-sidebar ul li.active {
+  background-color: rgb(29, 87, 140); /* Active item background */
+  color: #f39c12; /* Highlight active item text color */
+}
+
+.startup-sidebar-toggle {
+  background-color: #333;
+  color: rgb(74, 43, 132);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease;
+}
+
+.startup-sidebar-toggle:hover {
+  background-color: rgb(167, 24, 24); /* Lighten on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .startup-sidebar {
+      width: 200px; /* Slightly smaller on mobile */
+  }
+}

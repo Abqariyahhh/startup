@@ -1,0 +1,69 @@
+/* General page styling */
+.opportunities-page {
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7; /* Light background for better contrast */
+}
+
+/* Title styling */
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333; /* Dark text for readability */
+}
+
+/* Pitch section */
+.pitch-section {
+  margin-top: 3rem;
+}
+
+/* Pitch heading */
+.pitch-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #5A67D8; /* Soft blue */
+}
+
+/* Pitch items container */
+.pitch-items-container {
+  display: grid; /* Use CSS Grid for layout */
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+  gap: 1.5rem; /* Space between the grid items */
+}
+
+/* Pitch items */
+.pitch-item {
+  background-color: #fff; /* White background for the pitch cards */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 2rem; /* Space between pitch cards */
+  padding: 1.5rem; /* Inner padding for content */
+  transition: transform 0.2s; /* Animation for hover effect */
+  flex: 1 1 calc(30% - 1rem); /* 3 items per row with space */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Hover effect for pitch cards */
+.pitch-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Pitch title */
+.pitch-item h3 {
+  font-size: 1.8rem; /* Slightly larger font for the title */
+  margin-bottom: 1rem; /* Space below title */
+  color: #2D3748; /* Darker color for contrast */
+}
+
+/* Paragraph styling */
+.pitch-item p {
+  margin: 0.5rem 0; /* Space between paragraphs */
+  color: #4A5568; /* Grey color for text */
+}
+
+/* Highlighted text */
+.pitch-item strong {
+  color: #5A67D8; /* Soft blue for emphasis */
+}

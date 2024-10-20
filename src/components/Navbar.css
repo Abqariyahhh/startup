@@ -1,0 +1,32 @@
+.navbar {
+  background-color: black; /* Navbar background color */
+  padding: 10px; /* Padding for the navbar */
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Align items vertically */
+  position: fixed; /* Fixed position */
+  z-index: 1000; /* Ensure it stays on top */
+  width: 100%; /* Full width */
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex; /* Flexbox for the list */
+  list-style-type: none; /* Remove bullet points */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+.navbar li {
+  margin: 0 1rem; /* Margin between list items */
+}
+
+.navbar a {
+  color: violet; /* Link color */
+  text-decoration: none; /* No underline */
+}
+
+.navbar a:hover {
+  color: lightviolet; /* Color on hover */
+  text-decoration: underline; /* Underline on hover */
+}

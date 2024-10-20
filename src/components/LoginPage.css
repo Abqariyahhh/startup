@@ -1,0 +1,117 @@
+/* Ensure the login container takes full height and uses flexbox for centering */
+.login-page-body {
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Full height for vertical centering */
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #f2f2f2; /* Light gray background for contrast */
+  font-family: 'Poppins', sans-serif; /* Modern font family */
+}
+
+/* Main container for the login page */
+.login-container {
+  max-width: 400px; /* Max width for the container */
+  padding: 50px 80px 50px; /* Padding for better spacing */
+  border-radius: 12px; /* Softer rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #ffffff; /* Clean white background */
+  text-align: center; /* Center-align text */
+}
+
+/* Header styling */
+.login-container h2 {
+  margin-bottom: 20px; /* Increased margin for spacing */
+  font-size: 28px; /* Larger font size for emphasis */
+  color: #4c4c4c; /* Dark gray for a modern look */
+  font-weight: 600; /* Bolder font for the header */
+}
+
+/* Form group styles */
+.login-container .form-group {
+  display: flex; /* Enable flexbox for form groups */
+  flex-direction: column; /* Align children vertically */
+  margin-bottom: 20px; /* Increased space between form fields */
+}
+
+/* Label styling */
+.login-container .form-group label {
+  display: block; /* Block display for labels */
+  margin-bottom: 8px; /* More spacing below labels */
+  padding: 0 12px; /* Equal padding on both sides */
+  font-size: 14px; /* Standard font size */
+  color: #555; /* Softer gray color for readability */
+  font-weight: 500; /* Semi-bold for emphasis */
+}
+
+/* Input field styling */
+.login-container .form-group input {
+  width: calc(100% - 30px); /* Adjust width slightly to allow for padding */
+  padding: 12px; /* Comfortable padding */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 8px; /* Softer edges for input fields */
+  font-size: 16px; /* Larger font for readability */
+  color: #333; /* Standard text color */
+  transition: border 0.3s; /* Transition for border on focus */
+  margin-left: 0px; /* Move the input further to the left */
+}
+
+
+
+
+/* Input field focus state */
+.login-container .form-group input:focus {
+  border: 1px solid #4caf50; /* Highlighted border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+.login-container button {
+  margin-left: 0px;
+  background-color: #0878db; /* Primary action color */
+  color: white; /* Text color */
+  padding: 12px 20px; /* Comfortable padding for buttons */
+  border: none; /* Remove default border */
+  border-radius: 8px; /* Softer button edges */
+  font-size: 18px; /* Larger font size for buttons */
+  cursor: pointer; /* Pointer cursor for buttons */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  width: 100%; /* Full width button */
+}
+
+/* Button hover effect */
+.login-container button:hover {
+  background-color: #45a049; /* Darker shade on hover */
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+/* Error message styling */
+.login-container .message.error {
+  color: #ff6b6b; /* Softer red for errors */
+  margin-top: 15px; /* Spacing above error message */
+  font-size: 14px; /* Consistent font size */
+}
+
+/* Success message styling */
+.login-container .message.success {
+  color: #26a69a; /* Softer green for success */
+  margin-top: 15px; /* Spacing above success message */
+  font-size: 14px; /* Consistent font size */
+}
+
+/* Additional link styles */
+.login-container .links {
+  margin-top: 20px; /* Space above links */
+  font-size: 14px; /* Standard font size */
+}
+
+/* Link color */
+.login-container .links a {
+  color: #4caf50; /* Primary color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Link hover effect */
+.login-container .links a:hover {
+  text-decoration: underline; /* Underline on hover for clarity */
+}

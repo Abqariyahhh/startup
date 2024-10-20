@@ -1,0 +1,97 @@
+/* General Styles for Pledges Page */
+.pledges-container {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Very light gray background */
+    color: #333; /* Dark text color */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .pledges-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .pledges-header h1 {
+    font-size: 2.5rem;
+    color: #004d40; /* Deep teal color */
+    margin-bottom: 10px;
+  }
+  
+  .pledges-header p {
+    font-size: 1.2rem;
+    color: #555; /* Darker gray for contrast */
+  }
+  
+  /* Styles for Pledge Cards */
+  .pledges-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .pledge-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    animation: fadeInUp 0.6s forwards;
+  }
+  
+  .pledge-card:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .pledge-card:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .pledge-card:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .startup-name {
+    font-size: 1.5rem;
+    color: #004d40;
+    margin-bottom: 10px;
+  }
+  
+  .pledge-amount, .pledge-date {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .pledge-status {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .pledge-status.active {
+    color: #4caf50; /* Green color for active status */
+  }
+  
+  .pledge-status.completed {
+    color: #2196f3; /* Blue color for completed status */
+  }
+  
+  .pledge-status.pending {
+    color: #f44336; /* Red color for pending status */
+  }
+  
+  /* Animation for fading in */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

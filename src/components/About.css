@@ -1,0 +1,182 @@
+/* About.css */
+
+.about-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.hero-section {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background-color: #004d40; /* Dark mint background */
+}
+/* Specific styles for the About TheFoundersHub heading */
+.about-page-hero h1 {
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  font-size: 32px; /* Adjust font size as needed */
+  color: #333; /* Specify a color */
+  text-align: center; /* Center the text */
+  font-weight: 700; /* Make the text bold if needed */
+  line-height: 1.2; /* Control line height for better spacing */
+}
+
+/* Additional styles for the paragraph to ensure it's specific as well */
+.about-page-hero p {
+  margin-top: 10px; /* Space above the paragraph */
+  font-size: 18px; /* Font size for the paragraph */
+  color: #666; /* A softer color for the paragraph */
+  text-align: center; /* Center the paragraph text */
+}
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(204, 227, 246, 0.975); /* Dark overlay for better text contrast */
+}
+
+.hero-section .hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  animation: fadeIn 2s ease-out;
+}
+.hero-content .hero-heading h1 {
+  color: #0274c6;
+  
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  margin: 0;
+  animation: fadeIn 3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mission-section, .values-section, .team-section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mission-section {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mission-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0878db; /* Mint color */
+  text-align: center;
+}
+
+.values-section {
+  background-color: #e0f2f1; /* Light mint background */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.values-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0878db;
+  text-align: center;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.value-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-section {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0878db;
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.team-member {
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  height: auto;
+  max-width: 150px;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.team-member p {
+  margin: 0;
+  color: #666;
+}

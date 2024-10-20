@@ -1,0 +1,199 @@
+/* Container Styles */
+.startup-homepage-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.homepage-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Activities Section */
+.activities-section {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: nowrap; /* Prevent wrapping to maintain horizontal layout */
+    gap: 20px; /* Space between items */
+    justify-content: flex-start; /* Align items to the start */
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+    padding-bottom: 10px; /* Add padding at the bottom */
+}
+
+/* Activity Cards */
+.activity-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px; /* Fixed width for cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effects */
+}
+
+.activity-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.activity-card h2 {
+    margin-top: 0;
+}
+
+/* Button Styles */
+.pitch-btn,
+.add-ad-btn,
+.submit-ad-btn {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 4px; /* Rounded corners */
+    margin-top: 10px; /* Margin on top */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover */
+}
+
+.pitch-btn:hover,
+.add-ad-btn:hover,
+.submit-ad-btn:hover {
+    background-color: rgb(176, 245, 0); /* Lighter color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Seminars List */
+.seminars-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Horizontal layout for seminars */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 15px; /* Space between seminar items */
+}
+
+.seminars-list li {
+    margin-bottom: 0; /* Remove bottom margin for horizontal layout */
+}
+
+/* Advertisements */
+.ads-container {
+    display: flex; /* Use flexbox for ads layout */
+    flex-wrap: nowrap; /* Prevent wrapping to keep items in a row */
+    gap: 15px; /* Space between ads */
+    margin-top: 15px;
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+}
+
+.ad-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width for ads */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effects */
+}
+
+.ad-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.ad-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.ad-card h3 {
+    margin: 10px 0 5px; /* Adjusted margins */
+}
+
+.ad-card p {
+    margin: 0;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    width: 400px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease; /* Add transition for modal */
+}
+
+.modal-content:hover {
+    transform: scale(1.02); /* Scale effect on hover */
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #000; /* Darker color on hover */
+}
+
+/* Ad Form Styles */
+.ad-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.ad-form input[type="text"],
+.ad-form textarea,
+.ad-form input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.investors-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.investors-list li {
+    margin: 5px 0;
+    font-size: 1em;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.ad-form textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+/* Error Message Styles */
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}

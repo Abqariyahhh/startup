@@ -1,0 +1,107 @@
+/* General Styling */
+.dashboard-container {
+    max-width: 1000px;
+    padding: 100px 250px 20px;
+    background-color: #f4f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.dashboard-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4b6584;
+    margin-bottom: 30px;
+    animation: slideInDown 1.2s ease-in-out;
+}
+
+/* Section Styling */
+.dashboard-section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #2d98da;
+    margin-bottom: 20px;
+    position: relative;
+    animation: slideInLeft 1.2s ease-in-out;
+}
+
+/* Job Listings */
+.job-listings, .application-status {
+    list-style: none;
+    padding: 0;
+}
+
+.job-listing, .application-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-listing:hover, .application-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.apply-btn {
+    background-color: #2d98da;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #3867d6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+}

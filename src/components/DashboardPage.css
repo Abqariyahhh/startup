@@ -1,0 +1,101 @@
+/* General styles */
+.dashboard-homepage {
+  display: flex;
+  min-height: 100vh; /* Full height of the viewport */
+  background-color: #ffffff; /* White background */
+}
+
+/* Startup Sidebar styles */
+.dashboard-startup-sidebar {
+  width: 250px; /* Fixed width for sidebar */
+  background-color: #fcf8ff; /* Sidebar background */
+  color: rgb(79, 27, 108);
+  padding: 40px 20px; /* Padding for the sidebar */
+  height: auto; /* Adjusts based on content */
+  position: fixed; /* Fixed sidebar */
+  top: 0; /* Align to top */
+  left: 0; /* Align to left */
+  overflow-y: auto; /* Scrollable if content exceeds */
+  z-index: 1; /* Above other content */
+}
+
+/* Brand styling */
+.dashboard-startup-sidebar-brand {
+  font-size: 1.5rem; /* Brand font size */
+  color: #a96edd; /* Brand color */
+  font-weight: bold;
+  margin-bottom: 20px; /* Spacing below brand */
+}
+
+/* Search input styling */
+.search-container {
+  margin-bottom: 5px; /* Reduced spacing below search */
+}
+
+.search-input {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding for input */
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Notification button styling */
+.notification-container {
+  bottom: 0; /* Spacing below notification, positioned just below the search bar */
+}
+
+.notification-btn {
+  background: none; /* No background */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 1.5rem; /* Size of the notification icon */
+  color: rgb(79, 27, 108); /* Color of the icon */
+}
+
+
+/* Startup Sidebar list */
+.dashboard-startup-sidebar ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+  overflow-y: auto;
+}
+
+/* Startup Sidebar list items */
+.dashboard-startup-sidebar ul li {
+  overflow-y: auto;
+  display: flex; /* Flexbox for icon and text */
+  align-items: center; /* Center items vertically */
+  text-align: left;
+  margin: 15px 0; /* Margin between items */
+  cursor: pointer; /* Pointer cursor on hover */
+  color: rgb(0, 0, 0);
+  padding: 10px; /* Padding for clickable area */
+  transition: background-color 0.3s ease; /* Transition for hover */
+}
+
+/* Active sidebar item */
+.dashboard-startup-sidebar ul li.active {
+  background-color: #e1dede; /* Background for active item */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Main content */
+.dashboard-main-content {
+  margin-left: 250px; /* Offset to account for fixed sidebar */
+  padding: 20px; /* Padding around content */
+  flex: 1; /* Allow main content to grow */
+  background-color: #ffffff; /* Main content background */
+  overflow-y: auto; /* Scrollable if content exceeds */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .dashboard-startup-sidebar {
+      width: 100%; /* Full width on small screens */
+      position: relative; /* Change to relative positioning */
+      height: auto; /* Auto height on small screens */
+  }
+  .dashboard-main-content {
+      margin-left: 0; /* No offset on small screens */
+  }
+}

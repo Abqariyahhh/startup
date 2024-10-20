@@ -1,0 +1,73 @@
+.news-updates {
+  padding: 20px;
+  height: calc(100% - 220px); /* Ensure content fits without overlap */
+  width: calc(100% - 350px); /* Adjust width to avoid overlapping sidebar */
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Avoid horizontal scroll */
+  position: fixed;
+  top: 110px; /* Ensure content starts just below the header */
+  left: 320px; /* Align with the sidebar */
+  padding-right: 10px; /* Prevent content from touching scrollbar */
+  margin-top: 10px;
+}
+
+/* Responsive grid for arranging news items */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 20px;
+}
+
+/* Individual news item */
+.news-item {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.news-item img {
+  width: 100%; /* Ensure the image takes full width */
+  height: auto;
+}
+
+/* Content inside each news item */
+.news-content {
+  padding: 15px;
+}
+
+.news-content h3 {
+  font-size: 18px;
+  color: #502d96;
+  margin: 0;
+}
+
+.news-date {
+  color: #888;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.news-description {
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+/* Adjust scrollbar styles */
+.news-updates::-webkit-scrollbar {
+  width: 8px; /* Custom scrollbar width */
+}
+
+.news-updates::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Scrollbar thumb color */
+  border-radius: 4px;
+}

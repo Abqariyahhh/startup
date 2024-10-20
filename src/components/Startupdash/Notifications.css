@@ -1,0 +1,37 @@
+.notification-popup {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(-20px); /* Slide in effect */
+  z-index: 1000;
+}
+
+.notification-popup.active {
+  opacity: 1; /* Show when active */
+  transform: translateY(0); /* Reset position */
+}
+
+.notification-item {
+  margin: 5px 0; /* Space between notifications */
+}
+
+.close-btn {
+  align-self: flex-end; /* Position close button to the right */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.close-btn:hover {
+  color: red; /* Change color on hover */
+}

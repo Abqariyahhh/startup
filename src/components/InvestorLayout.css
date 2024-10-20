@@ -1,0 +1,19 @@
+.investor-layout {
+    display: flex;
+    flex-direction: row; /* Ensures sidebar and main content are in a row */
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #e0f2f1;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  

@@ -1,0 +1,90 @@
+/* General Styles for Reports Page */
+.reports-container {
+    padding: 60px 20px;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text color */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .reports-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .reports-header h1 {
+    font-size: 2.5rem;
+    color: #00796b; /* Teal color */
+    margin-bottom: 10px;
+  }
+  
+  .reports-header p {
+    font-size: 1.2rem;
+    color: #555; /* Darker gray for contrast */
+  }
+  
+  /* Styles for Report Cards in Grid Layout */
+  .reports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .report-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    max-width: 300px; /* Limiting the width of the cards */
+    opacity: 0;
+    animation: fadeInUp 0.6s forwards;
+  }
+  
+  .report-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .report-card:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .report-card:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .report-card:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .report-card:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  
+  .report-title {
+    font-size: 1.5rem;
+    color: #00796b; /* Teal color */
+    margin-bottom: 10px;
+  }
+  
+  .report-description {
+    font-size: 1rem;
+    color: #666; /* Medium gray */
+  }
+  
+  /* Animation for fading in */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

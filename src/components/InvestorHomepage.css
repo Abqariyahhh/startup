@@ -1,0 +1,124 @@
+.homepage-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f9f9f9; /* Light background for the main page */
+    padding: 35px 0px 0px;
+  }
+  
+  /* Sidebar container styles */
+  .sidebar {
+    
+    position: sticky;
+    top: 0;
+    width: 250px;
+    background-color: #e0f2f1; /* Mint shade for the sidebar background */
+    padding: 1rem;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    z-index: 900;
+  }
+  
+  .sidebar-header {
+    padding-top: 90px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c7873;
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar-menu {
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-menu li {
+    
+    margin-bottom: 1.5rem;
+  }
+  
+  .sidebar-menu li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar-menu li a:hover {
+    background-color: #81c784;
+    color: white;
+  }
+  
+  .sidebar-menu li a.active {
+    background-color: #66bb6a;
+    color: white;
+  }
+  
+  .sidebar-footer {
+    font-size: 0.9rem;
+    color: #333;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+  }
+  
+  /* Main content styles */
+  .main-content {
+    flex-grow: 1;
+    padding: 2rem;
+    background-color: white;
+    overflow-y: auto;
+  }
+  
+  .welcome-heading {
+    font-size: 2.5rem;
+    color: #004d40;
+    margin-bottom: 1rem;
+  }
+  
+  .intro-text {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #00695c;
+  }
+  
+  .deal-section {
+    margin-top: 3rem;
+  }
+  
+  /* Ensure the sidebar is responsive */
+  @media (max-width: 768px) {
+    .homepage-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  
+    .main-content {
+      margin-left: 0;
+    }
+  }
+  .section-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-content h1 {
+    color: #00796b; /* Match the mint color */
+  }
+  
+  .section-content p {
+    font-size: 1.1rem;
+    color: #4f4f4f;
+  }

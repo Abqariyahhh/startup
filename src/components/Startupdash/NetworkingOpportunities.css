@@ -1,0 +1,119 @@
+network-opportunities {
+    padding: 20px; /* Consistent padding */
+    height: calc(100% - 220px); /* Adjust height to account for header and extra space */
+    width: calc(100% - 350px); /* Adjust width to account for sidebar */
+    display: flex;
+    flex-direction: column; /* Ensure a column layout */
+    justify-content: flex-start; /* Space sections from top */
+    overflow-y: auto; /* Vertical scrolling enabled */
+    overflow-x: hidden; /* Avoid horizontal scroll */
+    position: fixed; /* Position container absolutely */
+    top: 110px; /* Adjusted to avoid overlapping with the header */
+    left: 300px; /* Adjusted to fit correctly beside the sidebar */
+    padding-right: 30px; /* Prevent content from touching scrollbar */
+    margin-top: 10px; /* Adjust margin if needed */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; /* Center the title */
+    color: #502d96; /* Dark color for the main title */
+}
+
+.section {
+    margin-bottom: 30px;
+    padding: 15px; /* Padding for sections */
+    background-color: #fff; /* White background for sections */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.2s; /* Animation effect */
+    border: 1px solid #ddd; /* Light border */
+}
+
+.section:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #502d96; /* Dark color for section headings */
+    border-bottom: 2px solid #502d96; /* Underline effect */
+    padding-bottom: 5px; /* Space below the heading */
+}
+
+/* Flexbox for Industry Groups and Discussion Forums */
+.content-wrapper {
+    display: flex; /* Use Flexbox */
+    justify-content: space-between; /* Space the items evenly */
+}
+
+.half-section {
+    width: 48%; /* Each section takes up slightly less than half the width */
+}
+
+.event-display {
+    overflow: hidden; /* Hide overflow */
+    height: 280px; /* Increased height for larger display */
+    position: relative; /* Position relative for absolute children */
+    background-color: #eaeaea; /* Light gray background for event display */
+    border-radius: 8px; /* Rounded corners */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.event-item {
+    position: absolute; /* Position absolute for animation */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    animation: slide-in-horizontal 6s ease-in-out infinite; /* Animate horizontally */
+    font-size: 22px; /* Increased font size for better visibility */
+    font-weight: bold; /* Make text bold */
+    color: #502d96; /* Dark color for the event text */
+    text-align: center; /* Center text */
+}
+
+.success-stories-grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 15px; /* Space between items */
+}
+
+.story-item {
+    padding: 15px; /* Padding for story items */
+    background-color: #f9f9f9; /* Light background for story items */
+    border: 1px solid #ccc; /* Light border for story items */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transform and shadow transition */
+}
+
+.story-item:hover {
+    transform: scale(1.05); /* Enlarge on hover */
+    box-shadow: 0 0 15px rgba(80, 45, 150, 0.5), 0 0 30px rgba(80, 45, 150, 0.3); /* Glow effect */
+}
+
+.story-item img {
+    width: 30%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+
+
+/* Animation keyframes for sliding effect */
+@keyframes slide-in-horizontal {
+    0% {
+        transform: translateX(100%); /* Start from the right */
+        opacity: 0; /* Invisible */
+    }
+    50% {
+        opacity: 1; /* Fully visible */
+    }
+    100% {
+        transform: translateX(-100%); /* End to the left */
+        opacity: 0; /* Invisible again */
+    }
+}

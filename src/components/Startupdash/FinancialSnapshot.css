@@ -1,0 +1,123 @@
+.financial-snapshot {
+    padding:100px 20px 20px;
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+    padding-left:70px;
+}
+
+.snapshot-title {
+    font-size: 2rem;
+    color: #004d40; /* Dark mint color */
+    margin-bottom: 20px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.summary-item {
+    flex: 1;
+    padding: 15px;
+    background-color: #e0f2f1; /* Mint shade */
+    border-radius: 8px;
+    text-align: center;
+}
+
+.summary-item h3 {
+    margin: 0;
+    color: #00796b; /* Mint color */
+}
+
+.charts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.chart {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.chart-placeholder {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #999;
+}
+
+.recent-kpi-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-transactions,
+.kpi {
+    flex: 1;
+    margin: 0 10px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recent-transactions h3,
+.kpi h3 {
+    margin-bottom: 15px;
+    color: #004d40;
+}
+
+
+
+.download-btn {
+    padding: 10px 15px;
+    background-color: #673ab7; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #5e35b1;
+}
+
+.expense-input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.expense-input h3 {
+    margin-bottom: 10px;
+    color: #333; /* Adjust to match your theme */
+}
+
+.expense-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px; /* Space between input and button */
+}
+
+.expense-input button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #36A2EB; /* Button color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.expense-input button:hover {
+    background-color: #2A82B5; /* Darker shade on hover */
+}

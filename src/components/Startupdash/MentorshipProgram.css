@@ -1,0 +1,151 @@
+.mentorship-container {
+    padding: 20px;
+    height: calc(100% - 220px);
+    width: calc(100% - 350px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 60px;
+    left: 300px;
+    padding-right: 30px;
+}
+
+.mentorship-container .search-and-registration {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.mentorship-container .find-mentors,
+.mentorship-container .register-mentor {
+    width: 48%;
+    padding-right: 30px; /* Adjusted for proper spacing */
+}
+
+.mentorship-container .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left:-30px
+}
+
+.mentorship-container .search-bar,
+.mentorship-container .input-box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px; /* Adjusted for a smaller width */
+    max-width: 100%;
+    ;
+}
+
+.mentorship-container .register-btn {
+    padding: 10px;
+    background-color: #502d96;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.mentorship-container .registration-message {
+    color: green;
+    margin-top: 10px;
+}
+
+.mentorship-container .mentor-list {
+    margin-top: 20px;
+}
+
+.mentorship-container .mentor-card {
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.mentorship-container .upcoming-classes {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mentorship-container .classes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.mentorship-container .class-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.mentorship-container .join-btn {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #502d96;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.mentorship-container .join-btn:hover {
+    background-color: #3c1f7c;
+}
+
+.mentorship-container .add-class-form {
+    margin-top: 20px;
+    background: #e7d9f7; /* Light purple background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.mentorship-container .add-class-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px; /* Adjusted for a smaller width */
+}
+
+.mentorship-container .add-class-form button {
+    padding: 10px;
+    background-color: #502d96;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mentorship-container .add-class-form button:hover {
+    background-color: #3c1f7c;
+}
+
+.mentorship-container .class-details {
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+.register-mentor h2 {
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    text-align: left; /* Align text to the left */
+    margin-left: -30px; /* Further left shift */
+    margin-top: 20px; /* Move the heading down (adjust the value as needed) */
+}
+

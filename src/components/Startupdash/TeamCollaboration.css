@@ -1,0 +1,147 @@
+.collaboration-container {
+    padding: 20px;
+    height: calc(100% - 220px); 
+    width: calc(100% - 350px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 130px;
+    left: 300px;
+    padding-right: 120px;
+  }
+  
+  .collab-title {
+    font-size: 38px;
+    color: rgb(24, 88, 249); 
+    margin-bottom: 20px;
+  }
+  
+  .search-container {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 250px; 
+  }
+  
+  .search-icon {
+    margin-right: 10px; 
+    font-size: 18px;
+  }
+  
+  .search-bar {
+    flex: 1; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s;
+  }
+  
+  .search-bar:focus {
+    border-color: #502d96; 
+    outline: none;
+  }
+  
+  /* Ensure all components are side-by-side with 30px horizontal spacing */
+  .content-wrapper {
+    display: flex;
+    justify-content: flex-start; /* Align the components to the start of the row */
+    gap: 30px; /* Adds 30px horizontal spacing between components */
+    flex-wrap: nowrap; /* Prevents wrapping */
+  }
+  
+  /* Styling for the common boxes */
+  .common-box {
+    flex: 1; /* Allows each component to take up equal space */
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Default background color */
+  }
+  
+  /* Specific containers for individual components */
+  .job-posting-container,
+  .collaboration-post-container,
+  .pitch-posting-container {
+    padding: 15px; /* Padding for the container */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #e0e0e0; /* Background color for the container */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  }
+  
+  /* Specific classes for individual components */
+  .job-posting {
+    background-color: #f0f8ff; /* Specific color for job posting */
+  }
+  
+  .collaboration-post {
+    background-color: #faf0e6; /* Specific color for collaboration post */
+  }
+  
+  .pitch-posting {
+    background-color: #f5f5dc; /* Specific color for pitch posting */
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 1024px) {
+    .collaboration-container {
+      width: calc(100% - 30px); 
+    }
+  
+    .content-wrapper {
+      flex-wrap: wrap; /* Wraps components on smaller screens */
+    }
+  
+    .common-box {
+      width: calc(50% - 15px); /* Each component takes half the width with adjusted spacing */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .collaboration-container {
+      padding: 10px; 
+      width: calc(100% - 20px); 
+    }
+  
+    .content-wrapper {
+      flex-direction: column; /* Stacks components vertically on small screens */
+    }
+  
+    .common-box {
+      width: 100%;
+      margin-bottom: 20px; 
+    }
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .investment-type {
+    display: flex;          /* Use flexbox for layout */
+    align-items: center;    /* Align items vertically in the center */
+  }
+  
+  .investment-type label {
+    margin-right: 15px;    /* Space between radio buttons */
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #502d96;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3c1f7c;
+  }
+  
