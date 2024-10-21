@@ -2,7 +2,7 @@
 .services-container {
   padding: 100px 20px 60px;
   background-color: #ffffff; /* White background */
-  color: #333; /* Dark text color */
+  color: #0878db; /* Dark text color */
   max-width: 1200px;
   margin: 0 auto;
   border-radius: 8px;
@@ -16,13 +16,13 @@
 
 .services-header h1 {
   font-size: 2.5rem;
-  color: #000000; /* Royal violet */
+  color:#0878db; /* Royal violet */
   margin-bottom: 10px;
 }
 
 .services-header p {
   font-size: 1.2rem;
-  color: #555; /* Darker gray for contrast */
+  color: #0878db; /* Darker gray for contrast */
 }
 
 /* Styles for Service Cards */
@@ -60,7 +60,7 @@
 
 .service-content h2 {
   font-size: 1.5rem;
-  color: #000000; /* Royal violet */
+  color: #0878db; /* Royal violet */
   margin-bottom: 10px;
 }
 
