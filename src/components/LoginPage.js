@@ -15,7 +15,7 @@ const LoginPage = () => {
     event.preventDefault();
   
     try {
-      const response = await axios.post('http://localhost:5000/login', { gmailId, password });
+      const response = await axios.post('https://startup.herokuapp.com/login', { gmailId, password });
   
       if (response.data && response.data.token) {
         localStorage.setItem('token', response.data.token);
