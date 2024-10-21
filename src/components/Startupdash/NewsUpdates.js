@@ -9,7 +9,7 @@ const NewsUpdates = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await fetch('http://api.gdeltproject.org/api/v2/doc/doc?query=startup%20entrepreneurship&mode=artlist&format=json&maxrecords=10');
+        const response = await fetch('https://api.gdeltproject.org/api/v2/doc/doc?query=startup%20entrepreneurship&mode=artlist&format=json&maxrecords=10');
         
         if (!response.ok) {
           throw new Error('Failed to fetch news articles');
