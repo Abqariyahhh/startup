@@ -2,7 +2,7 @@
 .testimonials-container {
   padding: 100px 20px 60px;
   background-color: #f9f9f9; /* Light gray background */
-  color: #333; /* Dark text color */
+  color: #0878db; /* Dark text color */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -14,13 +14,13 @@
 
 .testimonials-header h1 {
   font-size: 2.5rem;
-  color: #04100e; /* Deep teal color */
+  color: #0878db; /* Deep teal color */
   margin-bottom: 10px;
 }
 
 .testimonials-header p {
   font-size: 1.2rem;
-  color: #555; /* Darker gray for contrast */
+  color:#0878db; /* Darker gray for contrast */
 }
 
 /* Styles for Testimonial Cards */
@@ -73,7 +73,7 @@
 
 .testimonial-name {
   font-size: 1.2rem;
-  color: #004d40;
+  color:#0878db;
   margin-bottom: 5px;
 }
 
